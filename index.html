@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PSU – Zebranie Założycielskie</title>
+<meta name="description" content="Polskie Stowarzyszenie Ufologiczne – Zebranie Założycielskie, Szczyrk, 30 października 2026">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preload" href="fonts/montserrat-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/montserrat-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face { font-family: 'Montserrat'; font-style: normal; font-weight: 400 800; font-display: swap;
+  src: url(fonts/montserrat-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Montserrat'; font-style: normal; font-weight: 400 800; font-display: swap;
+  src: url(fonts/montserrat-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+*, *::before, *::after { box-sizing: border-box; margin: 0; }
+html, body { height: 100%; background: #050b1a; overflow: hidden; }
+body { font-family: 'Montserrat', Arial, sans-serif; color: #f4f6fa; -webkit-font-smoothing: antialiased; }
+#stage { position: absolute; left: 50%; top: 50%; width: 1920px; height: 1080px; transform-origin: 0 0; }
+#stage > section { position: absolute; inset: 0; width: 1920px; height: 1080px; overflow: hidden;
+  opacity: 0; visibility: hidden; transition: opacity .45s ease, visibility 0s linear .45s; }
+#stage > section.active { opacity: 1; visibility: visible; transition: opacity .45s ease; }
+section div:not([style*="display"]) { display: flex; flex-direction: column; }
+ul { padding-left: 1.1em; display: flex; flex-direction: column; gap: .35em; }
+li::marker { color: #dc143c; }
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 20px 28px; text-align: left; vertical-align: top; }
+th { font-weight: 700; }
+tr + tr td { border-top: 1px solid rgba(223,229,239,.08); }
+aside { display: none; }
+.tally { width: 100%; font: 800 64px/1.2 'Montserrat', Arial, sans-serif; color: #f4f6fa; background: transparent;
+  border: 0; padding: 0; outline: none; caret-color: #dc143c; }
+.tally::placeholder { color: #f4f6fa; opacity: 1; }
+.tally:focus { background: rgba(142,197,255,.08); border-radius: 8px; }
+.tally.bad { color: #ff6b81; }
+#hud { position: fixed; right: 16px; bottom: 12px; display: flex; gap: 8px; align-items: center;
+  font: 500 13px/1 'Montserrat', Arial, sans-serif; color: #9fb0cc; opacity: 0; transition: opacity .3s; z-index: 5; }
+body:hover #hud, #hud:focus-within { opacity: 1; }
+#hud button { font: inherit; color: #dfe5ef; background: rgba(17,35,74,.85); border: 1px solid #1b3366;
+  border-radius: 999px; padding: 8px 12px; cursor: pointer; }
+#hud button:hover { background: #1b3366; }
+#notes { position: fixed; left: 16px; right: 16px; bottom: 56px; max-height: 40vh; overflow: auto; display: none;
+  background: rgba(10,22,48,.96); border: 1px solid #1b3366; border-radius: 14px; padding: 18px 22px;
+  font: 400 18px/1.55 'Montserrat', Arial, sans-serif; color: #dfe5ef; z-index: 6; }
+body.show-notes #notes { display: block; }
+#progress { position: fixed; left: 0; bottom: 0; height: 3px; background: linear-gradient(90deg, #f4f6fa, #dc143c);
+  transition: width .3s; z-index: 5; }
+</style>
+</head>
+<body>
+<main id="stage">
+<section data-index="0" id="cover" data-transition="fade" style="background:radial-gradient(ellipse at 50% 0%, #1b3366 0%, #0a1630 40%, #050b1a 80%);color:#f4f6fa;font-family:'Montserrat', Arial, sans-serif;padding:128px;display:flex;flex-direction:row;align-items:center;gap:80px">
+<svg aria-label="" width="1920" height="1080" viewBox="0 0 1920 1080" style="position:absolute;left:0;top:0;width:1920px;height:1080px"><g fill="#ffffff"><circle cx="230" cy="194" r="1.5" opacity="0.6"/><circle cx="1382" cy="130" r="1.5" opacity="0.55"/><circle cx="730" cy="691" r="2.2" opacity="0.65"/><circle cx="1651" cy="583" r="1.5" opacity="0.45"/><circle cx="422" cy="929" r="1.5" opacity="0.4"/><circle cx="1114" cy="346" r="2.2" opacity="0.55"/><circle cx="1766" cy="950" r="1.5" opacity="0.45"/><circle cx="77" cy="518" r="1.5" opacity="0.4"/><circle cx="960" cy="60" r="1.2" opacity="0.5"/><circle cx="1530" cy="300" r="1.2" opacity="0.4"/><circle cx="560" cy="420" r="1.2" opacity="0.35"/><circle cx="1240" cy="820" r="1.8" opacity="0.5"/><circle cx="320" cy="640" r="1.2" opacity="0.35"/><circle cx="1860" cy="200" r="1.8" opacity="0.5"/><circle cx="880" cy="1000" r="1.2" opacity="0.4"/><circle cx="140" cy="60" r="1.2" opacity="0.45"/><circle cx="1450" cy="1030" r="1.2" opacity="0.4"/><circle cx="660" cy="150" r="1.8" opacity="0.5"/></g></svg>
+<div style="flex:1;display:flex;flex-direction:column;gap:32px">
+<p style="align-self:start;font-size:24px;font-weight:500;color:#9fb0cc;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.15);border-radius:999px;padding:10px 28px">Zebranie Założycielskie · Szczyrk, 30 października 2026</p>
+<h1 style="font-family:'Montserrat', Arial, sans-serif;font-size:80px;font-weight:800;line-height:1.05;text-transform:uppercase;color:#f4f6fa">Polskie Stowarzyszenie Ufologiczne</h1>
+<p style="font-size:28px;font-weight:600;letter-spacing:10px;text-transform:uppercase;color:#dfe5ef">Badania · Analiza · Edukacja</p>
+<div style="width:160px;height:6px;background:linear-gradient(to bottom, #f4f6fa 0% 50%, #dc143c 50% 100%)"></div>
+</div>
+<img src="assets/emblemat.png" alt="Emblemat PSU: orzeł z biało-czerwoną wstęgą i spodkiem UFO" style="width:600px;height:587px;object-fit:contain;border-radius:50%;box-shadow:0 0 0 1px rgba(223,229,239,0.2), 0 0 60px 10px rgba(142,197,255,0.13), 0 0 140px 40px rgba(27,51,102,0.4)">
+<aside>Powitanie uczestników. Dziękuję, że jesteście. Dziś zakładamy Polskie Stowarzyszenie Ufologiczne – stowarzyszenie zwykłe z siedzibą we Wrocławiu. Za chwilę przedstawię porządek obrad, który przegłosujemy, a potem wybierzemy przewodniczącego i protokolanta. Proszę wszystkich o wpisanie się na listę obecności – jest ona jednocześnie listą założycieli.</aside>
+</section>
+<section data-index="1" id="agenda" data-transition="fade" style="background:radial-gradient(ellipse at 50% 0%, #1b3366 0%, #0a1630 40%, #050b1a 80%);color:#f4f6fa;font-family:'Montserrat', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<svg aria-label="" width="1920" height="1080" viewBox="0 0 1920 1080" style="position:absolute;left:0;top:0;width:1920px;height:1080px"><g fill="#ffffff"><circle cx="230" cy="194" r="1.5" opacity="0.6"/><circle cx="1382" cy="130" r="1.5" opacity="0.55"/><circle cx="730" cy="691" r="2.2" opacity="0.65"/><circle cx="1651" cy="583" r="1.5" opacity="0.45"/><circle cx="422" cy="929" r="1.5" opacity="0.4"/><circle cx="1114" cy="346" r="2.2" opacity="0.55"/><circle cx="1766" cy="950" r="1.5" opacity="0.45"/><circle cx="77" cy="518" r="1.5" opacity="0.4"/><circle cx="960" cy="60" r="1.2" opacity="0.5"/><circle cx="1530" cy="300" r="1.2" opacity="0.4"/><circle cx="560" cy="420" r="1.2" opacity="0.35"/><circle cx="1240" cy="820" r="1.8" opacity="0.5"/><circle cx="320" cy="640" r="1.2" opacity="0.35"/><circle cx="1860" cy="200" r="1.8" opacity="0.5"/><circle cx="880" cy="1000" r="1.2" opacity="0.4"/><circle cx="140" cy="60" r="1.2" opacity="0.45"/><circle cx="1450" cy="1030" r="1.2" opacity="0.4"/><circle cx="660" cy="150" r="1.8" opacity="0.5"/></g></svg>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:600;letter-spacing:8px;text-transform:uppercase;color:#dfe5ef">Do przyjęcia w głosowaniu</p>
+<h2 style="font-family:'Montserrat', Arial, sans-serif;font-size:64px;font-weight:800;line-height:1.1;text-transform:uppercase;color:#f4f6fa">Porządek obrad</h2>
+<div style="width:120px;height:6px;background:linear-gradient(to bottom, #f4f6fa 0% 50%, #dc143c 50% 100%)"></div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px 64px">
+<div style="display:flex;gap:24px;align-items:baseline;border-top:1px solid #1b3366;padding:20px 0 0 0"><p style="font-size:40px;font-weight:800;color:#dc143c">1</p><p style="font-size:28px;line-height:1.35;color:#dfe5ef">Wybór przewodniczącego i protokolanta</p></div>
+<div style="display:flex;gap:24px;align-items:baseline;border-top:1px solid #1b3366;padding:20px 0 0 0"><p style="font-size:40px;font-weight:800;color:#dc143c">5</p><p style="font-size:28px;line-height:1.35;color:#dfe5ef">Uchwała o wyborze Zarządu</p></div>
+<div style="display:flex;gap:24px;align-items:baseline;border-top:1px solid #1b3366;padding:20px 0 0 0"><p style="font-size:40px;font-weight:800;color:#dc143c">2</p><p style="font-size:28px;line-height:1.35;color:#dfe5ef">Przedstawienie i dyskusja nad projektem regulaminu</p></div>
+<div style="display:flex;gap:24px;align-items:baseline;border-top:1px solid #1b3366;padding:20px 0 0 0"><p style="font-size:40px;font-weight:800;color:#dc143c">6</p><p style="font-size:28px;line-height:1.35;color:#dfe5ef">Uchwała o upoważnieniu Zarządu do złożenia wniosku o wpis do ewidencji</p></div>
+<div style="display:flex;gap:24px;align-items:baseline;border-top:1px solid #1b3366;padding:20px 0 0 0"><p style="font-size:40px;font-weight:800;color:#dc143c">3</p><p style="font-size:28px;line-height:1.35;color:#dfe5ef">Uchwała o założeniu Stowarzyszenia i jego siedzibie</p></div>
+<div style="display:flex;gap:24px;align-items:baseline;border-top:1px solid #1b3366;padding:20px 0 0 0"><p style="font-size:40px;font-weight:800;color:#dc143c">7</p><p style="font-size:28px;line-height:1.35;color:#dfe5ef">Podpisanie listy założycieli i zamknięcie zebrania</p></div>
+<div style="display:flex;gap:24px;align-items:baseline;border-top:1px solid #1b3366;padding:20px 0 0 0"><p style="font-size:40px;font-weight:800;color:#dc143c">4</p><p style="font-size:28px;line-height:1.35;color:#dfe5ef">Uchwała o uchwaleniu regulaminu Stowarzyszenia</p></div>
+</div>
+<div style="position:absolute;left:128px;bottom:52px;width:1664px;display:flex;flex-direction:row;align-items:center;gap:20px"><img src="assets/emblemat.png" alt="Emblemat PSU" style="width:56px;height:55px;object-fit:contain;border-radius:50%"><p style="font-size:24px;color:#9fb0cc">PSU · Zebranie Założycielskie · Szczyrk, 30.10.2026</p></div>
+<aside>Proponowany porządek obrad ma 7 punktów – zgodnie z protokołem. Proszę o głosowanie nad przyjęciem porządku obrad: kto jest za, kto przeciw, kto się wstrzymał. Według projektu protokołu porządek ma być przyjęty jednogłośnie – jeśli wynik będzie inny, protokolant to odnotuje.</aside>
+</section>
+<section data-index="2" id="prowadzacy" data-transition="fade" style="background:radial-gradient(ellipse at 50% 0%, #1b3366 0%, #0a1630 40%, #050b1a 80%);color:#f4f6fa;font-family:'Montserrat', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<svg aria-label="" width="1920" height="1080" viewBox="0 0 1920 1080" style="position:absolute;left:0;top:0;width:1920px;height:1080px"><g fill="#ffffff"><circle cx="230" cy="194" r="1.5" opacity="0.6"/><circle cx="1382" cy="130" r="1.5" opacity="0.55"/><circle cx="730" cy="691" r="2.2" opacity="0.65"/><circle cx="1651" cy="583" r="1.5" opacity="0.45"/><circle cx="422" cy="929" r="1.5" opacity="0.4"/><circle cx="1114" cy="346" r="2.2" opacity="0.55"/><circle cx="1766" cy="950" r="1.5" opacity="0.45"/><circle cx="77" cy="518" r="1.5" opacity="0.4"/><circle cx="960" cy="60" r="1.2" opacity="0.5"/><circle cx="1530" cy="300" r="1.2" opacity="0.4"/><circle cx="560" cy="420" r="1.2" opacity="0.35"/><circle cx="1240" cy="820" r="1.8" opacity="0.5"/><circle cx="320" cy="640" r="1.2" opacity="0.35"/><circle cx="1860" cy="200" r="1.8" opacity="0.5"/><circle cx="880" cy="1000" r="1.2" opacity="0.4"/><circle cx="140" cy="60" r="1.2" opacity="0.45"/><circle cx="1450" cy="1030" r="1.2" opacity="0.4"/><circle cx="660" cy="150" r="1.8" opacity="0.5"/></g></svg>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:600;letter-spacing:8px;text-transform:uppercase;color:#dfe5ef">Punkt 1</p>
+<h2 style="font-family:'Montserrat', Arial, sans-serif;font-size:64px;font-weight:800;line-height:1.1;text-transform:uppercase;color:#f4f6fa">Wybór prowadzących zebranie</h2>
+<div style="width:120px;height:6px;background:linear-gradient(to bottom, #f4f6fa 0% 50%, #dc143c 50% 100%)"></div>
+</div>
+<div style="display:flex;gap:40px">
+<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#0a1630;border:1px solid #1b3366;border-radius:20px;padding:48px">
+<p style="font-size:24px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:#8ec5ff">Przewodniczący zebrania</p>
+<p style="font-size:44px;font-weight:700;color:#f4f6fa">Łukasz Wnęk</p>
+<p style="font-size:28px;line-height:1.45;color:#9fb0cc">Prowadzi obrady, zarządza głosowania, podpisuje protokół i uchwały.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#0a1630;border:1px solid #1b3366;border-radius:20px;padding:48px">
+<p style="font-size:24px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:#8ec5ff">Protokolant</p>
+<p style="font-size:44px;font-weight:700;color:#f4f6fa">Karol Kłębczyk</p>
+<p style="font-size:28px;line-height:1.45;color:#9fb0cc">Spisuje przebieg zebrania i wyniki każdego głosowania.</p>
+</div>
+</div>
+<p style="font-size:28px;color:#9fb0cc">Głosowanie jawne · zwykła większość głosów</p>
+<div style="position:absolute;left:128px;bottom:52px;width:1664px;display:flex;flex-direction:row;align-items:center;gap:20px"><img src="assets/emblemat.png" alt="Emblemat PSU" style="width:56px;height:55px;object-fit:contain;border-radius:50%"><p style="font-size:24px;color:#9fb0cc">PSU · Zebranie Założycielskie · Szczyrk, 30.10.2026</p></div>
+<aside>Prośba o zgłaszanie kandydatów na przewodniczącego i protokolanta. Głosujemy jawnie. Od tej chwili obrady prowadzi wybrany przewodniczący, a protokolant zapisuje wyniki każdego głosowania: ile osób głosowało, ile za, przeciw i wstrzymało się – to wymagają formularze protokołu i uchwał.</aside>
+</section>
+<section data-index="3" id="kim" data-transition="fade" style="background:radial-gradient(ellipse at 50% 0%, #1b3366 0%, #0a1630 40%, #050b1a 80%);color:#f4f6fa;font-family:'Montserrat', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<svg aria-label="" width="1920" height="1080" viewBox="0 0 1920 1080" style="position:absolute;left:0;top:0;width:1920px;height:1080px"><g fill="#ffffff"><circle cx="230" cy="194" r="1.5" opacity="0.6"/><circle cx="1382" cy="130" r="1.5" opacity="0.55"/><circle cx="730" cy="691" r="2.2" opacity="0.65"/><circle cx="1651" cy="583" r="1.5" opacity="0.45"/><circle cx="422" cy="929" r="1.5" opacity="0.4"/><circle cx="1114" cy="346" r="2.2" opacity="0.55"/><circle cx="1766" cy="950" r="1.5" opacity="0.45"/><circle cx="77" cy="518" r="1.5" opacity="0.4"/><circle cx="960" cy="60" r="1.2" opacity="0.5"/><circle cx="1530" cy="300" r="1.2" opacity="0.4"/><circle cx="560" cy="420" r="1.2" opacity="0.35"/><circle cx="1240" cy="820" r="1.8" opacity="0.5"/><circle cx="320" cy="640" r="1.2" opacity="0.35"/><circle cx="1860" cy="200" r="1.8" opacity="0.5"/><circle cx="880" cy="1000" r="1.2" opacity="0.4"/><circle cx="140" cy="60" r="1.2" opacity="0.45"/><circle cx="1450" cy="1030" r="1.2" opacity="0.4"/><circle cx="660" cy="150" r="1.8" opacity="0.5"/></g></svg>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:600;letter-spacing:8px;text-transform:uppercase;color:#dfe5ef">Punkt 2 · Projekt regulaminu</p>
+<h2 style="font-family:'Montserrat', Arial, sans-serif;font-size:64px;font-weight:800;line-height:1.1;text-transform:uppercase;color:#f4f6fa">Kim będziemy</h2>
+<div style="width:120px;height:6px;background:linear-gradient(to bottom, #f4f6fa 0% 50%, #dc143c 50% 100%)"></div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px 40px">
+<div style="display:flex;flex-direction:column;gap:12px;border-top:1px solid #1b3366;padding:24px 0 0 0"><h3 style="font-size:32px;font-weight:700;color:#f4f6fa">Stowarzyszenie zwykłe</h3><p style="font-size:26px;line-height:1.45;color:#9fb0cc">Dobrowolne, samorządne, niezarobkowe, bez osobowości prawnej (§ 1)</p></div>
+<div style="display:flex;flex-direction:column;gap:12px;border-top:1px solid #1b3366;padding:24px 0 0 0"><h3 style="font-size:32px;font-weight:700;color:#f4f6fa">Siedziba: Wrocław</h3><p style="font-size:26px;line-height:1.45;color:#9fb0cc">Działamy w całej Polsce, w razie potrzeby także za granicą (§ 3)</p></div>
+<div style="display:flex;flex-direction:column;gap:12px;border-top:1px solid #1b3366;padding:24px 0 0 0"><h3 style="font-size:32px;font-weight:700;color:#f4f6fa">Nadzór</h3><p style="font-size:26px;line-height:1.45;color:#9fb0cc">Prezydent Wrocławia, który prowadzi ewidencję stowarzyszeń zwykłych (§ 3)</p></div>
+<div style="display:flex;flex-direction:column;gap:12px;border-top:1px solid #1b3366;padding:24px 0 0 0"><h3 style="font-size:32px;font-weight:700;color:#f4f6fa">Praca społeczna</h3><p style="font-size:26px;line-height:1.45;color:#9fb0cc">Działalność opiera się na pracy członków (§ 6)</p></div>
+<div style="display:flex;flex-direction:column;gap:12px;border-top:1px solid #1b3366;padding:24px 0 0 0"><h3 style="font-size:32px;font-weight:700;color:#f4f6fa">Bez działalności gospodarczej</h3><p style="font-size:26px;line-height:1.45;color:#9fb0cc">Ani odpłatnej działalności pożytku publicznego (§ 6)</p></div>
+<div style="display:flex;flex-direction:column;gap:12px;border-top:1px solid #1b3366;padding:24px 0 0 0"><h3 style="font-size:32px;font-weight:700;color:#f4f6fa">Skrót: PSU</h3><p style="font-size:26px;line-height:1.45;color:#9fb0cc">Logo i pieczęć według wzoru przyjętego przez Zarząd (§ 1, § 3)</p></div>
+</div>
+<div style="position:absolute;left:128px;bottom:52px;width:1664px;display:flex;flex-direction:row;align-items:center;gap:20px"><img src="assets/emblemat.png" alt="Emblemat PSU" style="width:56px;height:55px;object-fit:contain;border-radius:50%"><p style="font-size:24px;color:#9fb0cc">Regulamin, rozdział I · ustawa z 7 kwietnia 1989 r. – Prawo o stowarzyszeniach</p></div>
+<aside>Przechodzimy do projektu regulaminu. Najpierw forma prawna: stowarzyszenie zwykłe – najprostsza forma, bez KRS, wpis do ewidencji u Prezydenta Wrocławia. Nie mamy osobowości prawnej i nie prowadzimy działalności gospodarczej. Pracujemy społecznie.</aside>
+</section>
+<section data-index="4" id="cele" data-transition="fade" style="background:radial-gradient(ellipse at 50% 0%, #1b3366 0%, #0a1630 40%, #050b1a 80%);color:#f4f6fa;font-family:'Montserrat', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<svg aria-label="" width="1920" height="1080" viewBox="0 0 1920 1080" style="position:absolute;left:0;top:0;width:1920px;height:1080px"><g fill="#ffffff"><circle cx="230" cy="194" r="1.5" opacity="0.6"/><circle cx="1382" cy="130" r="1.5" opacity="0.55"/><circle cx="730" cy="691" r="2.2" opacity="0.65"/><circle cx="1651" cy="583" r="1.5" opacity="0.45"/><circle cx="422" cy="929" r="1.5" opacity="0.4"/><circle cx="1114" cy="346" r="2.2" opacity="0.55"/><circle cx="1766" cy="950" r="1.5" opacity="0.45"/><circle cx="77" cy="518" r="1.5" opacity="0.4"/><circle cx="960" cy="60" r="1.2" opacity="0.5"/><circle cx="1530" cy="300" r="1.2" opacity="0.4"/><circle cx="560" cy="420" r="1.2" opacity="0.35"/><circle cx="1240" cy="820" r="1.8" opacity="0.5"/><circle cx="320" cy="640" r="1.2" opacity="0.35"/><circle cx="1860" cy="200" r="1.8" opacity="0.5"/><circle cx="880" cy="1000" r="1.2" opacity="0.4"/><circle cx="140" cy="60" r="1.2" opacity="0.45"/><circle cx="1450" cy="1030" r="1.2" opacity="0.4"/><circle cx="660" cy="150" r="1.8" opacity="0.5"/></g></svg>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:600;letter-spacing:8px;text-transform:uppercase;color:#dfe5ef">Punkt 2 · Regulamin § 4</p>
+<h2 style="font-family:'Montserrat', Arial, sans-serif;font-size:64px;font-weight:800;line-height:1.1;text-transform:uppercase;color:#f4f6fa">Siedem celów Stowarzyszenia</h2>
+<div style="width:120px;height:6px;background:linear-gradient(to bottom, #f4f6fa 0% 50%, #dc143c 50% 100%)"></div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:24px 64px">
+<div style="display:flex;gap:24px;align-items:baseline"><p style="font-size:32px;font-weight:800;color:#dc143c">01</p><p style="font-size:26px;line-height:1.4;color:#9fb0cc"><b style="color:#f4f6fa">Gromadzenie i krytyczna analiza</b> danych źródłowych o UFO/UAP i zjawiskach niewyjaśnionych</p></div>
+<div style="display:flex;gap:24px;align-items:baseline"><p style="font-size:32px;font-weight:800;color:#dc143c">05</p><p style="font-size:26px;line-height:1.4;color:#9fb0cc"><b style="color:#f4f6fa">Przeciwdziałanie dezinformacji</b>, mistyfikacjom i manipulacjom</p></div>
+<div style="display:flex;gap:24px;align-items:baseline"><p style="font-size:32px;font-weight:800;color:#dc143c">02</p><p style="font-size:26px;line-height:1.4;color:#9fb0cc"><b style="color:#f4f6fa">Weryfikacja relacji świadków</b> z poszanowaniem ich prywatności i danych</p></div>
+<div style="display:flex;gap:24px;align-items:baseline"><p style="font-size:32px;font-weight:800;color:#dc143c">06</p><p style="font-size:26px;line-height:1.4;color:#9fb0cc"><b style="color:#f4f6fa">Ochrona dorobku historycznego</b> polskich badań nad zjawiskami niewyjaśnionymi</p></div>
+<div style="display:flex;gap:24px;align-items:baseline"><p style="font-size:32px;font-weight:800;color:#dc143c">03</p><p style="font-size:26px;line-height:1.4;color:#9fb0cc"><b style="color:#f4f6fa">Upowszechnianie metody naukowej</b>, sceptycyzmu badawczego i krytycznego myślenia</p></div>
+<div style="display:flex;gap:24px;align-items:baseline"><p style="font-size:32px;font-weight:800;color:#dc143c">07</p><p style="font-size:26px;line-height:1.4;color:#9fb0cc"><b style="color:#f4f6fa">Integracja i współpraca</b> z instytucjami naukowymi, NGO i ekspertami w kraju i za granicą</p></div>
+<div style="display:flex;gap:24px;align-items:baseline"><p style="font-size:32px;font-weight:800;color:#dc143c">04</p><p style="font-size:26px;line-height:1.4;color:#9fb0cc"><b style="color:#f4f6fa">Edukacja</b> z ufologii, astronomii, meteorologii i lotnictwa – w oparciu o źródła</p></div>
+</div>
+<div style="position:absolute;left:128px;bottom:52px;width:1664px;display:flex;flex-direction:row;align-items:center;gap:20px"><img src="assets/emblemat.png" alt="Emblemat PSU" style="width:56px;height:55px;object-fit:contain;border-radius:50%"><p style="font-size:24px;color:#9fb0cc">PSU · Badania · Analiza · Edukacja</p></div>
+<aside>Cele z paragrafu 4. Kluczowe przesłanie: jesteśmy organizacją badawczą i sceptyczną. Zbieramy dane, weryfikujemy relacje, chronimy świadków, a jednocześnie walczymy z dezinformacją i mistyfikacjami. Te cele trafią do wniosku o wpis do ewidencji.</aside>
+</section>
+<section data-index="5" id="metoda" data-transition="fade" style="background:radial-gradient(ellipse at 50% 0%, #1b3366 0%, #0a1630 40%, #050b1a 80%);color:#f4f6fa;font-family:'Montserrat', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<svg aria-label="" width="1920" height="1080" viewBox="0 0 1920 1080" style="position:absolute;left:0;top:0;width:1920px;height:1080px"><g fill="#ffffff"><circle cx="230" cy="194" r="1.5" opacity="0.6"/><circle cx="1382" cy="130" r="1.5" opacity="0.55"/><circle cx="730" cy="691" r="2.2" opacity="0.65"/><circle cx="1651" cy="583" r="1.5" opacity="0.45"/><circle cx="422" cy="929" r="1.5" opacity="0.4"/><circle cx="1114" cy="346" r="2.2" opacity="0.55"/><circle cx="1766" cy="950" r="1.5" opacity="0.45"/><circle cx="77" cy="518" r="1.5" opacity="0.4"/><circle cx="960" cy="60" r="1.2" opacity="0.5"/><circle cx="1530" cy="300" r="1.2" opacity="0.4"/><circle cx="560" cy="420" r="1.2" opacity="0.35"/><circle cx="1240" cy="820" r="1.8" opacity="0.5"/><circle cx="320" cy="640" r="1.2" opacity="0.35"/><circle cx="1860" cy="200" r="1.8" opacity="0.5"/><circle cx="880" cy="1000" r="1.2" opacity="0.4"/><circle cx="140" cy="60" r="1.2" opacity="0.45"/><circle cx="1450" cy="1030" r="1.2" opacity="0.4"/><circle cx="660" cy="150" r="1.8" opacity="0.5"/></g></svg>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:600;letter-spacing:8px;text-transform:uppercase;color:#dfe5ef">Punkt 2 · Regulamin § 5</p>
+<h2 style="font-family:'Montserrat', Arial, sans-serif;font-size:64px;font-weight:800;line-height:1.1;text-transform:uppercase;color:#f4f6fa">Jak badamy zgłoszenia</h2>
+<div style="width:120px;height:6px;background:linear-gradient(to bottom, #f4f6fa 0% 50%, #dc143c 50% 100%)"></div>
+</div>
+<div style="display:flex;gap:16px;align-items:stretch">
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#0a1630;border:1px solid #1b3366;border-radius:20px;padding:40px"><p style="font-size:64px;font-weight:800;color:#dc143c">1</p><h3 style="font-size:30px;font-weight:700;color:#f4f6fa">Zgłoszenie</h3><p style="font-size:24px;line-height:1.45;color:#9fb0cc">Przyjęcie relacji, zdjęć i nagrań do archiwum</p></div>
+<div style="align-self:center;width:48px;display:flex;flex-direction:row;align-items:center"><svg aria-hidden="true" width="48" height="20" viewBox="0 0 48 20" style="display:block"><path d="M2 10H44M36 3L45 10L36 17" fill="none" stroke="#9fb0cc" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#0a1630;border:1px solid #1b3366;border-radius:20px;padding:40px"><p style="font-size:64px;font-weight:800;color:#dc143c">2</p><h3 style="font-size:30px;font-weight:700;color:#f4f6fa">Wywiad i wizja</h3><p style="font-size:24px;line-height:1.45;color:#9fb0cc">Rozmowa ze świadkiem i wizja lokalna</p></div>
+<div style="align-self:center;width:48px;display:flex;flex-direction:row;align-items:center"><svg aria-hidden="true" width="48" height="20" viewBox="0 0 48 20" style="display:block"><path d="M2 10H44M36 3L45 10L36 17" fill="none" stroke="#9fb0cc" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#0a1630;border:1px solid #1b3366;border-radius:20px;padding:40px"><p style="font-size:64px;font-weight:800;color:#dc143c">3</p><h3 style="font-size:30px;font-weight:700;color:#f4f6fa">Analiza danych</h3><p style="font-size:24px;line-height:1.45;color:#9fb0cc">Astronomia, pogoda, ruch lotniczy, satelity, analiza obrazu</p></div>
+<div style="align-self:center;width:48px;display:flex;flex-direction:row;align-items:center"><svg aria-hidden="true" width="48" height="20" viewBox="0 0 48 20" style="display:block"><path d="M2 10H44M36 3L45 10L36 17" fill="none" stroke="#9fb0cc" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#f4f6fa;border-radius:20px;padding:40px"><p style="font-size:64px;font-weight:800;color:#dc143c">4</p><h3 style="font-size:30px;font-weight:700;color:#050b1a">Raport</h3><p style="font-size:24px;line-height:1.45;color:#11234a">Publikacja wyników – także gdy wyjaśnienie jest zwyczajne</p></div>
+</div>
+<p style="font-size:26px;line-height:1.45;color:#9fb0cc">Do tego: wykłady, warsztaty i pokazy nieba · fact-checking doniesień medialnych · kwerendy archiwalne · współpraca z uczelniami</p>
+<div style="position:absolute;left:128px;bottom:52px;width:1664px;display:flex;flex-direction:row;align-items:center;gap:20px"><img src="assets/emblemat.png" alt="Emblemat PSU" style="width:56px;height:55px;object-fit:contain;border-radius:50%"><p style="font-size:24px;color:#9fb0cc">PSU · Badania · Analiza · Edukacja</p></div>
+<aside>Środki działania z paragrafu 5 w praktyce: każde zgłoszenie przechodzi te same cztery kroki. Ważne, że publikujemy raport także wtedy, gdy okaże się, że to był samolot, Starlink czy Wenus – to buduje naszą wiarygodność. Poza badaniem zgłoszeń prowadzimy edukację, weryfikację doniesień medialnych i współpracę naukową.</aside>
+</section>
+<section data-index="6" id="czlonkostwo" data-transition="fade" style="background:radial-gradient(ellipse at 50% 0%, #1b3366 0%, #0a1630 40%, #050b1a 80%);color:#f4f6fa;font-family:'Montserrat', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<svg aria-label="" width="1920" height="1080" viewBox="0 0 1920 1080" style="position:absolute;left:0;top:0;width:1920px;height:1080px"><g fill="#ffffff"><circle cx="230" cy="194" r="1.5" opacity="0.6"/><circle cx="1382" cy="130" r="1.5" opacity="0.55"/><circle cx="730" cy="691" r="2.2" opacity="0.65"/><circle cx="1651" cy="583" r="1.5" opacity="0.45"/><circle cx="422" cy="929" r="1.5" opacity="0.4"/><circle cx="1114" cy="346" r="2.2" opacity="0.55"/><circle cx="1766" cy="950" r="1.5" opacity="0.45"/><circle cx="77" cy="518" r="1.5" opacity="0.4"/><circle cx="960" cy="60" r="1.2" opacity="0.5"/><circle cx="1530" cy="300" r="1.2" opacity="0.4"/><circle cx="560" cy="420" r="1.2" opacity="0.35"/><circle cx="1240" cy="820" r="1.8" opacity="0.5"/><circle cx="320" cy="640" r="1.2" opacity="0.35"/><circle cx="1860" cy="200" r="1.8" opacity="0.5"/><circle cx="880" cy="1000" r="1.2" opacity="0.4"/><circle cx="140" cy="60" r="1.2" opacity="0.45"/><circle cx="1450" cy="1030" r="1.2" opacity="0.4"/><circle cx="660" cy="150" r="1.8" opacity="0.5"/></g></svg>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:600;letter-spacing:8px;text-transform:uppercase;color:#dfe5ef">Punkt 2 · Regulamin §§ 7–10</p>
+<h2 style="font-family:'Montserrat', Arial, sans-serif;font-size:64px;font-weight:800;line-height:1.1;text-transform:uppercase;color:#f4f6fa">Członkostwo</h2>
+<div style="width:120px;height:6px;background:linear-gradient(to bottom, #f4f6fa 0% 50%, #dc143c 50% 100%)"></div>
+</div>
+<div style="display:flex;gap:32px">
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#0a1630;border:1px solid #1b3366;border-radius:20px;padding:40px">
+<h3 style="font-size:30px;font-weight:700;color:#8ec5ff">Kto i jak</h3>
+<ul style="font-size:24px;line-height:1.45;color:#dfe5ef"><li>Pełnoletni z pełną zdolnością do czynności prawnych, także cudzoziemcy</li><li>Założyciele – z chwilą wpisu do ewidencji</li><li>Pozostali – deklaracja i uchwała Zarządu</li><li>Odmowa: odwołanie do Zebrania w 21 dni</li></ul>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#0a1630;border:1px solid #1b3366;border-radius:20px;padding:40px">
+<h3 style="font-size:30px;font-weight:700;color:#8ec5ff">Prawa</h3>
+<ul style="font-size:24px;line-height:1.45;color:#dfe5ef"><li>Głos stanowiący na Zebraniu Członków</li><li>Czynne i bierne prawo wyborcze do Zarządu</li><li>Wnioski, postulaty i dostęp do informacji</li><li>Udział w wydarzeniach i badaniach</li></ul>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#0a1630;border:1px solid #1b3366;border-radius:20px;padding:40px">
+<h3 style="font-size:30px;font-weight:700;color:#8ec5ff">Obowiązki</h3>
+<ul style="font-size:24px;line-height:1.45;color:#dfe5ef"><li>Przestrzeganie Regulaminu i uchwał</li><li>Terminowe opłacanie składek</li><li>Realizowanie celów Stowarzyszenia</li><li>Rzetelność badawcza i ochrona danych świadków</li></ul>
+</div>
+</div>
+<p style="font-size:26px;line-height:1.45;color:#9fb0cc"><b style="color:#f4f6fa">Wykluczenie</b> m.in. za świadome rozpowszechnianie sfałszowanych materiałów lub 6 miesięcy zaległości w składkach</p>
+<div style="position:absolute;left:128px;bottom:52px;width:1664px;display:flex;flex-direction:row;align-items:center;gap:20px"><img src="assets/emblemat.png" alt="Emblemat PSU" style="width:56px;height:55px;object-fit:contain;border-radius:50%"><p style="font-size:24px;color:#9fb0cc">PSU · Zebranie Założycielskie · Szczyrk, 30.10.2026</p></div>
+<aside>Kto może być członkiem: każda pełnoletnia osoba z pełną zdolnością do czynności prawnych, również cudzoziemiec. My, założyciele, stajemy się członkami automatycznie z chwilą wpisu do ewidencji. Nowi członkowie składają deklarację, a Zarząd przyjmuje ich uchwałą. Członkostwo ustaje przez rezygnację, wykluczenie lub śmierć. Od wykluczenia i od odmowy przyjęcia można odwołać się do Zebrania Członków w ciągu 21 dni.</aside>
+</section>
+<section data-index="7" id="wladze" data-transition="fade" style="background:radial-gradient(ellipse at 50% 0%, #1b3366 0%, #0a1630 40%, #050b1a 80%);color:#f4f6fa;font-family:'Montserrat', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<svg aria-label="" width="1920" height="1080" viewBox="0 0 1920 1080" style="position:absolute;left:0;top:0;width:1920px;height:1080px"><g fill="#ffffff"><circle cx="230" cy="194" r="1.5" opacity="0.6"/><circle cx="1382" cy="130" r="1.5" opacity="0.55"/><circle cx="730" cy="691" r="2.2" opacity="0.65"/><circle cx="1651" cy="583" r="1.5" opacity="0.45"/><circle cx="422" cy="929" r="1.5" opacity="0.4"/><circle cx="1114" cy="346" r="2.2" opacity="0.55"/><circle cx="1766" cy="950" r="1.5" opacity="0.45"/><circle cx="77" cy="518" r="1.5" opacity="0.4"/><circle cx="960" cy="60" r="1.2" opacity="0.5"/><circle cx="1530" cy="300" r="1.2" opacity="0.4"/><circle cx="560" cy="420" r="1.2" opacity="0.35"/><circle cx="1240" cy="820" r="1.8" opacity="0.5"/><circle cx="320" cy="640" r="1.2" opacity="0.35"/><circle cx="1860" cy="200" r="1.8" opacity="0.5"/><circle cx="880" cy="1000" r="1.2" opacity="0.4"/><circle cx="140" cy="60" r="1.2" opacity="0.45"/><circle cx="1450" cy="1030" r="1.2" opacity="0.4"/><circle cx="660" cy="150" r="1.8" opacity="0.5"/></g></svg>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:600;letter-spacing:8px;text-transform:uppercase;color:#dfe5ef">Punkt 2 · Regulamin §§ 11–17</p>
+<h2 style="font-family:'Montserrat', Arial, sans-serif;font-size:64px;font-weight:800;line-height:1.1;text-transform:uppercase;color:#f4f6fa">Władze Stowarzyszenia</h2>
+<div style="width:120px;height:6px;background:linear-gradient(to bottom, #f4f6fa 0% 50%, #dc143c 50% 100%)"></div>
+</div>
+<div style="display:flex;gap:32px">
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#f4f6fa;border-radius:20px;padding:44px">
+<p style="font-size:24px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:#b0102f">Najwyższa władza</p>
+<h3 style="font-size:40px;font-weight:800;color:#050b1a">Zebranie Członków</h3>
+<ul style="font-size:24px;line-height:1.45;color:#11234a"><li>Wszyscy członkowie, po jednym głosie</li><li>Wybiera i odwołuje Zarząd, udziela absolutorium</li><li>Zmienia Regulamin, rozpatruje odwołania</li><li>Co najmniej raz na 12 miesięcy, zawiadomienie 14 dni wcześniej</li><li>Może obradować zdalnie</li></ul>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;background:#0a1630;border:1px solid #1b3366;border-radius:20px;padding:44px">
+<p style="font-size:24px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:#8ec5ff">Kadencja 3 lata</p>
+<h3 style="font-size:40px;font-weight:800;color:#f4f6fa">Zarząd – 3 osoby</h3>
+<ul style="font-size:24px;line-height:1.45;color:#dfe5ef"><li>Prezes, Wiceprezes, Sekretarz-Skarbnik</li><li>Kieruje bieżącą pracą i reprezentuje PSU</li><li>Przyjmuje członków, ustala składki</li><li>Przyjmuje standardy weryfikacji i ochrony danych świadków</li><li>Ubytek składu: kooptacja do połowy Zarządu</li></ul>
+</div>
+</div>
+<p style="font-size:26px;color:#9fb0cc">Bez organu kontroli wewnętrznej – kontrolę nad Zarządem sprawuje Zebranie Członków.</p>
+<div style="position:absolute;left:128px;bottom:52px;width:1664px;display:flex;flex-direction:row;align-items:center;gap:20px"><img src="assets/emblemat.png" alt="Emblemat PSU" style="width:56px;height:55px;object-fit:contain;border-radius:50%"><p style="font-size:24px;color:#9fb0cc">PSU · Zebranie Założycielskie · Szczyrk, 30.10.2026</p></div>
+<aside>Mamy tylko dwa organy: Zebranie Członków i trzyosobowy Zarząd. Nie powołujemy komisji rewizyjnej – kontrolę sprawuje Zebranie Członków. Pierwszy Zarząd wybieramy dzisiaj, na trzyletnią kadencję. Funkcje w Zarządzie przydziela Zebranie przy wyborze.</aside>
+</section>
+<section data-index="8" id="glosowania" data-transition="fade" style="background:radial-gradient(ellipse at 50% 0%, #1b3366 0%, #0a1630 40%, #050b1a 80%);color:#f4f6fa;font-family:'Montserrat', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<svg aria-label="" width="1920" height="1080" viewBox="0 0 1920 1080" style="position:absolute;left:0;top:0;width:1920px;height:1080px"><g fill="#ffffff"><circle cx="230" cy="194" r="1.5" opacity="0.6"/><circle cx="1382" cy="130" r="1.5" opacity="0.55"/><circle cx="730" cy="691" r="2.2" opacity="0.65"/><circle cx="1651" cy="583" r="1.5" opacity="0.45"/><circle cx="422" cy="929" r="1.5" opacity="0.4"/><circle cx="1114" cy="346" r="2.2" opacity="0.55"/><circle cx="1766" cy="950" r="1.5" opacity="0.45"/><circle cx="77" cy="518" r="1.5" opacity="0.4"/><circle cx="960" cy="60" r="1.2" opacity="0.5"/><circle cx="1530" cy="300" r="1.2" opacity="0.4"/><circle cx="560" cy="420" r="1.2" opacity="0.35"/><circle cx="1240" cy="820" r="1.8" opacity="0.5"/><circle cx="320" cy="640" r="1.2" opacity="0.35"/><circle cx="1860" cy="200" r="1.8" opacity="0.5"/><circle cx="880" cy="1000" r="1.2" opacity="0.4"/><circle cx="140" cy="60" r="1.2" opacity="0.45"/><circle cx="1450" cy="1030" r="1.2" opacity="0.4"/><circle cx="660" cy="150" r="1.8" opacity="0.5"/></g></svg>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:600;letter-spacing:8px;text-transform:uppercase;color:#dfe5ef">Punkt 2 · Regulamin § 15</p>
+<h2 style="font-family:'Montserrat', Arial, sans-serif;font-size:64px;font-weight:800;line-height:1.1;text-transform:uppercase;color:#f4f6fa">Jak podejmujemy uchwały</h2>
+<div style="width:120px;height:6px;background:linear-gradient(to bottom, #f4f6fa 0% 50%, #dc143c 50% 100%)"></div>
+</div>
+<table style="font-size:26px;color:#dfe5ef">
+<tr style="background:#1b3366"><th style="width:40%;color:#f4f6fa;padding:20px 28px">Sprawa</th><th style="width:20%;color:#f4f6fa">Większość</th><th style="width:40%;color:#f4f6fa">Kworum</th></tr>
+<tr style="background:#0a1630"><td>Uchwały zwykłe – I termin</td><td>zwykła</td><td>co najmniej połowa członków</td></tr>
+<tr style="background:#11234a"><td>Uchwały zwykłe – II termin (+30 min)</td><td>zwykła</td><td>bez względu na liczbę obecnych</td></tr>
+<tr style="background:#0a1630"><td>Zmiana Regulaminu, odwołanie Zarządu, rozwiązanie PSU</td><td>bezwzględna</td><td>co najmniej połowa członków, także w II terminie</td></tr>
+</table>
+<p style="font-size:26px;line-height:1.45;color:#9fb0cc">Wybory do Zarządu: <b style="color:#f4f6fa">jawnie</b>, zwykłą większością – Zebranie może zdecydować o głosowaniu tajnym (§ 12).</p>
+<div style="position:absolute;left:128px;bottom:52px;width:1664px;display:flex;flex-direction:row;align-items:center;gap:20px"><img src="assets/emblemat.png" alt="Emblemat PSU" style="width:56px;height:55px;object-fit:contain;border-radius:50%"><p style="font-size:24px;color:#9fb0cc">PSU · Zebranie Założycielskie · Szczyrk, 30.10.2026</p></div>
+<aside>Zasady głosowania. Zwykła większość oznacza więcej głosów za niż przeciw. Bezwzględna – więcej niż połowa oddanych głosów. Drugi termin zebrania wyznacza się tego samego dnia 30 minut później i wtedy przy zwykłych uchwałach kworum nie obowiązuje. Ważne sprawy – zmiana regulaminu, odwołanie Zarządu i rozwiązanie – zawsze wymagają obecności co najmniej połowy członków. Na tym kończę prezentację projektu regulaminu – przechodzimy do dyskusji.</aside>
+</section>
+<section data-index="9" id="dyskusja" data-transition="fade" style="background:radial-gradient(ellipse at 70% 50%, #1b3366 0%, #0a1630 45%, #050b1a 85%);color:#f4f6fa;font-family:'Montserrat', Arial, sans-serif;padding:128px;display:flex;flex-direction:row;align-items:center;gap:96px">
+<svg aria-label="" width="1920" height="1080" viewBox="0 0 1920 1080" style="position:absolute;left:0;top:0;width:1920px;height:1080px"><g fill="#ffffff"><circle cx="230" cy="194" r="1.5" opacity="0.6"/><circle cx="1382" cy="130" r="1.5" opacity="0.55"/><circle cx="730" cy="691" r="2.2" opacity="0.65"/><circle cx="1651" cy="583" r="1.5" opacity="0.45"/><circle cx="422" cy="929" r="1.5" opacity="0.4"/><circle cx="1114" cy="346" r="2.2" opacity="0.55"/><circle cx="1766" cy="950" r="1.5" opacity="0.45"/><circle cx="77" cy="518" r="1.5" opacity="0.4"/><circle cx="960" cy="60" r="1.2" opacity="0.5"/><circle cx="1530" cy="300" r="1.2" opacity="0.4"/><circle cx="560" cy="420" r="1.2" opacity="0.35"/><circle cx="1240" cy="820" r="1.8" opacity="0.5"/><circle cx="320" cy="640" r="1.2" opacity="0.35"/><circle cx="1860" cy="200" r="1.8" opacity="0.5"/><circle cx="880" cy="1000" r="1.2" opacity="0.4"/><circle cx="140" cy="60" r="1.2" opacity="0.45"/><circle cx="1450" cy="1030" r="1.2" opacity="0.4"/><circle cx="660" cy="150" r="1.8" opacity="0.5"/></g></svg>
+<div style="flex:1;display:flex;flex-direction:column;gap:32px">
+<p style="font-size:24px;font-weight:600;letter-spacing:8px;text-transform:uppercase;color:#dfe5ef">Punkt 2 · Dyskusja</p>
+<h2 style="font-family:'Montserrat', Arial, sans-serif;font-size:88px;font-weight:800;line-height:1.05;text-transform:uppercase;color:#f4f6fa">Pytania i uwagi do regulaminu</h2>
+<div style="width:160px;height:6px;background:linear-gradient(to bottom, #f4f6fa 0% 50%, #dc143c 50% 100%)"></div>
+<p style="font-size:30px;line-height:1.45;color:#9fb0cc">Poprawki zgłaszamy teraz. Po uchwaleniu każda zmiana Regulaminu wymaga bezwzględnej większości i kworum połowy członków (§ 21).</p>
+</div>
+<img src="assets/emblemat.png" alt="Emblemat PSU" style="width:480px;height:469px;object-fit:contain;border-radius:50%;box-shadow:0 0 0 1px rgba(223,229,239,0.2), 0 0 60px 10px rgba(142,197,255,0.13), 0 0 140px 40px rgba(27,51,102,0.4)">
+<aside>Otwieram dyskusję nad projektem regulaminu. Proszę o pytania i propozycje poprawek. Ewentualne poprawki protokolant zapisuje, a przed głosowaniem nad uchwałą nr 2 odczytujemy ostateczne brzmienie zmienionych paragrafów. Po dyskusji przechodzimy do głosowań nad uchwałami.</aside>
+</section>
+<section data-index="10" id="u1" data-transition="fade" style="background:radial-gradient(ellipse at 50% 0%, #1b3366 0%, #0a1630 40%, #050b1a 80%);color:#f4f6fa;font-family:'Montserrat', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<svg aria-label="" width="1920" height="1080" viewBox="0 0 1920 1080" style="position:absolute;left:0;top:0;width:1920px;height:1080px"><g fill="#ffffff"><circle cx="230" cy="194" r="1.5" opacity="0.6"/><circle cx="1382" cy="130" r="1.5" opacity="0.55"/><circle cx="730" cy="691" r="2.2" opacity="0.65"/><circle cx="1651" cy="583" r="1.5" opacity="0.45"/><circle cx="422" cy="929" r="1.5" opacity="0.4"/><circle cx="1114" cy="346" r="2.2" opacity="0.55"/><circle cx="1766" cy="950" r="1.5" opacity="0.45"/><circle cx="77" cy="518" r="1.5" opacity="0.4"/><circle cx="960" cy="60" r="1.2" opacity="0.5"/><circle cx="1530" cy="300" r="1.2" opacity="0.4"/><circle cx="560" cy="420" r="1.2" opacity="0.35"/><circle cx="1240" cy="820" r="1.8" opacity="0.5"/><circle cx="320" cy="640" r="1.2" opacity="0.35"/><circle cx="1860" cy="200" r="1.8" opacity="0.5"/><circle cx="880" cy="1000" r="1.2" opacity="0.4"/><circle cx="140" cy="60" r="1.2" opacity="0.45"/><circle cx="1450" cy="1030" r="1.2" opacity="0.4"/><circle cx="660" cy="150" r="1.8" opacity="0.5"/></g></svg>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:600;letter-spacing:8px;text-transform:uppercase;color:#dfe5ef">Punkt 3 · Głosowanie</p>
+<h2 style="font-family:'Montserrat', Arial, sans-serif;font-size:64px;font-weight:800;line-height:1.1;text-transform:uppercase;color:#f4f6fa">Uchwała nr 1</h2>
+<p style="font-size:34px;font-weight:600;color:#dfe5ef">w sprawie założenia Stowarzyszenia i jego siedziby</p>
+<div style="width:120px;height:6px;background:linear-gradient(to bottom, #f4f6fa 0% 50%, #dc143c 50% 100%)"></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px;background:#0a1630;border:1px solid #1b3366;border-radius:20px;padding:44px 48px">
+<p style="font-size:28px;line-height:1.45;color:#dfe5ef"><b style="color:#8ec5ff">§ 1</b>  Zebranie Założycielskie postanawia założyć stowarzyszenie zwykłe pod nazwą „Polskie Stowarzyszenie Ufologiczne”.</p>
+<p style="font-size:28px;line-height:1.45;color:#dfe5ef"><b style="color:#8ec5ff">§ 2</b>  Siedzibą Stowarzyszenia jest Wrocław, ul. Małopanewska 10A/21, 54-212 Wrocław.</p>
+</div>
+<div style="display:flex;gap:24px">
+<div style="flex:1;display:flex;flex-direction:column;gap:8px;border-bottom:2px dashed #1b3366;padding:0 0 16px 0"><p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#9fb0cc">Głosowało</p><input class="tally" type="text" inputmode="numeric" maxlength="3" placeholder="–" aria-label="glosowalo" data-key="u1-glosowalo"></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:8px;border-bottom:2px dashed #1b3366;padding:0 0 16px 0"><p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#9fb0cc">Za</p><input class="tally" type="text" inputmode="numeric" maxlength="3" placeholder="–" aria-label="za" data-key="u1-za"></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:8px;border-bottom:2px dashed #1b3366;padding:0 0 16px 0"><p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#9fb0cc">Przeciw</p><input class="tally" type="text" inputmode="numeric" maxlength="3" placeholder="–" aria-label="przeciw" data-key="u1-przeciw"></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:8px;border-bottom:2px dashed #1b3366;padding:0 0 16px 0"><p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#9fb0cc">Wstrzymało się</p><input class="tally" type="text" inputmode="numeric" maxlength="3" placeholder="–" aria-label="wstrzymalo" data-key="u1-wstrzymalo"></div>
+</div>
+<div style="position:absolute;left:128px;bottom:52px;width:1664px;display:flex;flex-direction:row;align-items:center;gap:20px"><img src="assets/emblemat.png" alt="Emblemat PSU" style="width:56px;height:55px;object-fit:contain;border-radius:50%"><p style="font-size:24px;color:#9fb0cc">PSU · Zebranie Założycielskie · Szczyrk, 30.10.2026</p></div>
+<aside>Przewodniczący odczytuje treść uchwały nr 1 i zarządza głosowanie jawne: kto jest za, kto przeciw, kto się wstrzymał. Protokolant wpisuje liczbę głosujących i wyniki – w protokole i pod uchwałą. Uchwała wchodzi w życie z dniem podjęcia.</aside>
+</section>
+<section data-index="11" id="u2" data-transition="fade" style="background:radial-gradient(ellipse at 50% 0%, #1b3366 0%, #0a1630 40%, #050b1a 80%);color:#f4f6fa;font-family:'Montserrat', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<svg aria-label="" width="1920" height="1080" viewBox="0 0 1920 1080" style="position:absolute;left:0;top:0;width:1920px;height:1080px"><g fill="#ffffff"><circle cx="230" cy="194" r="1.5" opacity="0.6"/><circle cx="1382" cy="130" r="1.5" opacity="0.55"/><circle cx="730" cy="691" r="2.2" opacity="0.65"/><circle cx="1651" cy="583" r="1.5" opacity="0.45"/><circle cx="422" cy="929" r="1.5" opacity="0.4"/><circle cx="1114" cy="346" r="2.2" opacity="0.55"/><circle cx="1766" cy="950" r="1.5" opacity="0.45"/><circle cx="77" cy="518" r="1.5" opacity="0.4"/><circle cx="960" cy="60" r="1.2" opacity="0.5"/><circle cx="1530" cy="300" r="1.2" opacity="0.4"/><circle cx="560" cy="420" r="1.2" opacity="0.35"/><circle cx="1240" cy="820" r="1.8" opacity="0.5"/><circle cx="320" cy="640" r="1.2" opacity="0.35"/><circle cx="1860" cy="200" r="1.8" opacity="0.5"/><circle cx="880" cy="1000" r="1.2" opacity="0.4"/><circle cx="140" cy="60" r="1.2" opacity="0.45"/><circle cx="1450" cy="1030" r="1.2" opacity="0.4"/><circle cx="660" cy="150" r="1.8" opacity="0.5"/></g></svg>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:600;letter-spacing:8px;text-transform:uppercase;color:#dfe5ef">Punkt 4 · Głosowanie</p>
+<h2 style="font-family:'Montserrat', Arial, sans-serif;font-size:64px;font-weight:800;line-height:1.1;text-transform:uppercase;color:#f4f6fa">Uchwała nr 2</h2>
+<p style="font-size:34px;font-weight:600;color:#dfe5ef">w sprawie uchwalenia regulaminu Stowarzyszenia</p>
+<div style="width:120px;height:6px;background:linear-gradient(to bottom, #f4f6fa 0% 50%, #dc143c 50% 100%)"></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px;background:#0a1630;border:1px solid #1b3366;border-radius:20px;padding:44px 48px">
+<p style="font-size:28px;line-height:1.45;color:#dfe5ef"><b style="color:#8ec5ff">§ 1</b>  Zebranie Założycielskie uchwala regulamin działalności stowarzyszenia zwykłego „Polskie Stowarzyszenie Ufologiczne” z siedzibą we Wrocławiu, w brzmieniu stanowiącym załącznik do uchwały.</p>
+<p style="font-size:24px;color:#9fb0cc">6 rozdziałów · 23 paragrafy · z poprawkami przyjętymi w dyskusji</p>
+</div>
+<div style="display:flex;gap:24px">
+<div style="flex:1;display:flex;flex-direction:column;gap:8px;border-bottom:2px dashed #1b3366;padding:0 0 16px 0"><p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#9fb0cc">Głosowało</p><input class="tally" type="text" inputmode="numeric" maxlength="3" placeholder="–" aria-label="glosowalo" data-key="u2-glosowalo"></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:8px;border-bottom:2px dashed #1b3366;padding:0 0 16px 0"><p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#9fb0cc">Za</p><input class="tally" type="text" inputmode="numeric" maxlength="3" placeholder="–" aria-label="za" data-key="u2-za"></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:8px;border-bottom:2px dashed #1b3366;padding:0 0 16px 0"><p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#9fb0cc">Przeciw</p><input class="tally" type="text" inputmode="numeric" maxlength="3" placeholder="–" aria-label="przeciw" data-key="u2-przeciw"></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:8px;border-bottom:2px dashed #1b3366;padding:0 0 16px 0"><p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#9fb0cc">Wstrzymało się</p><input class="tally" type="text" inputmode="numeric" maxlength="3" placeholder="–" aria-label="wstrzymalo" data-key="u2-wstrzymalo"></div>
+</div>
+<div style="position:absolute;left:128px;bottom:52px;width:1664px;display:flex;flex-direction:row;align-items:center;gap:20px"><img src="assets/emblemat.png" alt="Emblemat PSU" style="width:56px;height:55px;object-fit:contain;border-radius:50%"><p style="font-size:24px;color:#9fb0cc">PSU · Zebranie Założycielskie · Szczyrk, 30.10.2026</p></div>
+<aside>Głosujemy nad regulaminem w brzmieniu przedstawionym, z poprawkami przyjętymi w dyskusji – jeśli były. Regulamin składamy do urzędu w 2 egzemplarzach; podpisuje go nowo wybrany Zarząd. Wyniki głosowania do protokołu.</aside>
+</section>
+<section data-index="12" id="u3" data-transition="fade" style="background:radial-gradient(ellipse at 50% 0%, #1b3366 0%, #0a1630 40%, #050b1a 80%);color:#f4f6fa;font-family:'Montserrat', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<svg aria-label="" width="1920" height="1080" viewBox="0 0 1920 1080" style="position:absolute;left:0;top:0;width:1920px;height:1080px"><g fill="#ffffff"><circle cx="230" cy="194" r="1.5" opacity="0.6"/><circle cx="1382" cy="130" r="1.5" opacity="0.55"/><circle cx="730" cy="691" r="2.2" opacity="0.65"/><circle cx="1651" cy="583" r="1.5" opacity="0.45"/><circle cx="422" cy="929" r="1.5" opacity="0.4"/><circle cx="1114" cy="346" r="2.2" opacity="0.55"/><circle cx="1766" cy="950" r="1.5" opacity="0.45"/><circle cx="77" cy="518" r="1.5" opacity="0.4"/><circle cx="960" cy="60" r="1.2" opacity="0.5"/><circle cx="1530" cy="300" r="1.2" opacity="0.4"/><circle cx="560" cy="420" r="1.2" opacity="0.35"/><circle cx="1240" cy="820" r="1.8" opacity="0.5"/><circle cx="320" cy="640" r="1.2" opacity="0.35"/><circle cx="1860" cy="200" r="1.8" opacity="0.5"/><circle cx="880" cy="1000" r="1.2" opacity="0.4"/><circle cx="140" cy="60" r="1.2" opacity="0.45"/><circle cx="1450" cy="1030" r="1.2" opacity="0.4"/><circle cx="660" cy="150" r="1.8" opacity="0.5"/></g></svg>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:600;letter-spacing:8px;text-transform:uppercase;color:#dfe5ef">Punkt 5 · Głosowanie</p>
+<h2 style="font-family:'Montserrat', Arial, sans-serif;font-size:64px;font-weight:800;line-height:1.1;text-transform:uppercase;color:#f4f6fa">Uchwała nr 3</h2>
+<p style="font-size:34px;font-weight:600;color:#dfe5ef">w sprawie wyboru Zarządu na pierwszą, trzyletnią kadencję</p>
+<div style="width:120px;height:6px;background:linear-gradient(to bottom, #f4f6fa 0% 50%, #dc143c 50% 100%)"></div>
+</div>
+<div style="display:flex;gap:24px">
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#f4f6fa;border-radius:20px;padding:36px 40px"><p style="font-size:24px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#b0102f">Prezes Zarządu</p><p style="font-size:34px;font-weight:700;color:#050b1a">Łukasz Wnęk</p></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#0a1630;border:1px solid #1b3366;border-radius:20px;padding:36px 40px"><p style="font-size:24px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#8ec5ff">Wiceprezes</p><p style="font-size:34px;font-weight:700;color:#f4f6fa">Krzysztof Laudański</p></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#0a1630;border:1px solid #1b3366;border-radius:20px;padding:36px 40px"><p style="font-size:24px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#8ec5ff">Sekretarz-Skarbnik</p><p style="font-size:34px;font-weight:700;color:#f4f6fa">Karol Kłębczyk</p></div>
+</div>
+<div style="display:flex;gap:24px">
+<div style="flex:1;display:flex;flex-direction:column;gap:8px;border-bottom:2px dashed #1b3366;padding:0 0 16px 0"><p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#9fb0cc">Głosowało</p><input class="tally" type="text" inputmode="numeric" maxlength="3" placeholder="–" aria-label="glosowalo" data-key="u3-glosowalo"></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:8px;border-bottom:2px dashed #1b3366;padding:0 0 16px 0"><p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#9fb0cc">Za</p><input class="tally" type="text" inputmode="numeric" maxlength="3" placeholder="–" aria-label="za" data-key="u3-za"></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:8px;border-bottom:2px dashed #1b3366;padding:0 0 16px 0"><p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#9fb0cc">Przeciw</p><input class="tally" type="text" inputmode="numeric" maxlength="3" placeholder="–" aria-label="przeciw" data-key="u3-przeciw"></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:8px;border-bottom:2px dashed #1b3366;padding:0 0 16px 0"><p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#9fb0cc">Wstrzymało się</p><input class="tally" type="text" inputmode="numeric" maxlength="3" placeholder="–" aria-label="wstrzymalo" data-key="u3-wstrzymalo"></div>
+</div>
+<div style="position:absolute;left:128px;bottom:52px;width:1664px;display:flex;flex-direction:row;align-items:center;gap:20px"><img src="assets/emblemat.png" alt="Emblemat PSU" style="width:56px;height:55px;object-fit:contain;border-radius:50%"><p style="font-size:24px;color:#9fb0cc">Głosowanie jawne, zwykła większość (§ 12) – chyba że Zebranie zdecyduje o tajnym</p></div>
+<aside>Zgłaszamy kandydatów na trzy funkcje: Prezesa, Wiceprezesa i Sekretarza-Skarbnika. Funkcje przydziela Zebranie przy wyborze. Domyślnie głosujemy jawnie; jeśli ktoś wnioskuje o głosowanie tajne, najpierw głosujemy nad tym wnioskiem. Do wniosku o wpis członkowie Zarządu podadzą adres zamieszkania i PESEL.</aside>
+</section>
+<section data-index="13" id="u4" data-transition="fade" style="background:radial-gradient(ellipse at 50% 0%, #1b3366 0%, #0a1630 40%, #050b1a 80%);color:#f4f6fa;font-family:'Montserrat', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<svg aria-label="" width="1920" height="1080" viewBox="0 0 1920 1080" style="position:absolute;left:0;top:0;width:1920px;height:1080px"><g fill="#ffffff"><circle cx="230" cy="194" r="1.5" opacity="0.6"/><circle cx="1382" cy="130" r="1.5" opacity="0.55"/><circle cx="730" cy="691" r="2.2" opacity="0.65"/><circle cx="1651" cy="583" r="1.5" opacity="0.45"/><circle cx="422" cy="929" r="1.5" opacity="0.4"/><circle cx="1114" cy="346" r="2.2" opacity="0.55"/><circle cx="1766" cy="950" r="1.5" opacity="0.45"/><circle cx="77" cy="518" r="1.5" opacity="0.4"/><circle cx="960" cy="60" r="1.2" opacity="0.5"/><circle cx="1530" cy="300" r="1.2" opacity="0.4"/><circle cx="560" cy="420" r="1.2" opacity="0.35"/><circle cx="1240" cy="820" r="1.8" opacity="0.5"/><circle cx="320" cy="640" r="1.2" opacity="0.35"/><circle cx="1860" cy="200" r="1.8" opacity="0.5"/><circle cx="880" cy="1000" r="1.2" opacity="0.4"/><circle cx="140" cy="60" r="1.2" opacity="0.45"/><circle cx="1450" cy="1030" r="1.2" opacity="0.4"/><circle cx="660" cy="150" r="1.8" opacity="0.5"/></g></svg>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:600;letter-spacing:8px;text-transform:uppercase;color:#dfe5ef">Punkt 6 · Głosowanie</p>
+<h2 style="font-family:'Montserrat', Arial, sans-serif;font-size:64px;font-weight:800;line-height:1.1;text-transform:uppercase;color:#f4f6fa">Uchwała nr 4</h2>
+<p style="font-size:34px;font-weight:600;color:#dfe5ef">w sprawie upoważnienia Zarządu do złożenia wniosku o wpis do ewidencji</p>
+<div style="width:120px;height:6px;background:linear-gradient(to bottom, #f4f6fa 0% 50%, #dc143c 50% 100%)"></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px;background:#0a1630;border:1px solid #1b3366;border-radius:20px;padding:44px 48px">
+<p style="font-size:28px;line-height:1.45;color:#dfe5ef"><b style="color:#8ec5ff">§ 1</b>  Zebranie zobowiązuje i upoważnia Zarząd do złożenia do Prezydenta Wrocławia wniosku o wpis do ewidencji stowarzyszeń zwykłych oraz do wszelkich związanych czynności, w tym uzupełnienia braków formalnych.</p>
+<p style="font-size:24px;color:#9fb0cc">Za pośrednictwem: Wydział Partycypacji Społecznej UM Wrocławia, ul. Gabrieli Zapolskiej 4</p>
+</div>
+<div style="display:flex;gap:24px">
+<div style="flex:1;display:flex;flex-direction:column;gap:8px;border-bottom:2px dashed #1b3366;padding:0 0 16px 0"><p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#9fb0cc">Głosowało</p><input class="tally" type="text" inputmode="numeric" maxlength="3" placeholder="–" aria-label="glosowalo" data-key="u4-glosowalo"></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:8px;border-bottom:2px dashed #1b3366;padding:0 0 16px 0"><p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#9fb0cc">Za</p><input class="tally" type="text" inputmode="numeric" maxlength="3" placeholder="–" aria-label="za" data-key="u4-za"></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:8px;border-bottom:2px dashed #1b3366;padding:0 0 16px 0"><p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#9fb0cc">Przeciw</p><input class="tally" type="text" inputmode="numeric" maxlength="3" placeholder="–" aria-label="przeciw" data-key="u4-przeciw"></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:8px;border-bottom:2px dashed #1b3366;padding:0 0 16px 0"><p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#9fb0cc">Wstrzymało się</p><input class="tally" type="text" inputmode="numeric" maxlength="3" placeholder="–" aria-label="wstrzymalo" data-key="u4-wstrzymalo"></div>
+</div>
+<div style="position:absolute;left:128px;bottom:52px;width:1664px;display:flex;flex-direction:row;align-items:center;gap:20px"><img src="assets/emblemat.png" alt="Emblemat PSU" style="width:56px;height:55px;object-fit:contain;border-radius:50%"><p style="font-size:24px;color:#9fb0cc">PSU · Zebranie Założycielskie · Szczyrk, 30.10.2026</p></div>
+<aside>Ostatnia uchwała: upoważniamy Zarząd do złożenia wniosku o wpis do ewidencji u Prezydenta Wrocławia i do uzupełniania ewentualnych braków. Wniosek podpisują wszyscy członkowie Zarządu. Wyniki głosowania do protokołu.</aside>
+</section>
+<section data-index="14" id="lista" data-transition="fade" style="background:radial-gradient(ellipse at 50% 0%, #1b3366 0%, #0a1630 40%, #050b1a 80%);color:#f4f6fa;font-family:'Montserrat', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<svg aria-label="" width="1920" height="1080" viewBox="0 0 1920 1080" style="position:absolute;left:0;top:0;width:1920px;height:1080px"><g fill="#ffffff"><circle cx="230" cy="194" r="1.5" opacity="0.6"/><circle cx="1382" cy="130" r="1.5" opacity="0.55"/><circle cx="730" cy="691" r="2.2" opacity="0.65"/><circle cx="1651" cy="583" r="1.5" opacity="0.45"/><circle cx="422" cy="929" r="1.5" opacity="0.4"/><circle cx="1114" cy="346" r="2.2" opacity="0.55"/><circle cx="1766" cy="950" r="1.5" opacity="0.45"/><circle cx="77" cy="518" r="1.5" opacity="0.4"/><circle cx="960" cy="60" r="1.2" opacity="0.5"/><circle cx="1530" cy="300" r="1.2" opacity="0.4"/><circle cx="560" cy="420" r="1.2" opacity="0.35"/><circle cx="1240" cy="820" r="1.8" opacity="0.5"/><circle cx="320" cy="640" r="1.2" opacity="0.35"/><circle cx="1860" cy="200" r="1.8" opacity="0.5"/><circle cx="880" cy="1000" r="1.2" opacity="0.4"/><circle cx="140" cy="60" r="1.2" opacity="0.45"/><circle cx="1450" cy="1030" r="1.2" opacity="0.4"/><circle cx="660" cy="150" r="1.8" opacity="0.5"/></g></svg>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:600;letter-spacing:8px;text-transform:uppercase;color:#dfe5ef">Punkt 7</p>
+<h2 style="font-family:'Montserrat', Arial, sans-serif;font-size:64px;font-weight:800;line-height:1.1;text-transform:uppercase;color:#f4f6fa">Podpisanie listy założycieli</h2>
+<div style="width:120px;height:6px;background:linear-gradient(to bottom, #f4f6fa 0% 50%, #dc143c 50% 100%)"></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<p style="font-size:26px;color:#9fb0cc">Każdy założyciel wpisuje:</p>
+<div style="display:flex;gap:24px">
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#0a1630;border:1px solid #1b3366;border-radius:20px;padding:32px"><p style="font-size:48px;font-weight:800;color:#dc143c">1</p><p style="font-size:28px;font-weight:700;color:#f4f6fa">Imię i nazwisko</p></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#0a1630;border:1px solid #1b3366;border-radius:20px;padding:32px"><p style="font-size:48px;font-weight:800;color:#dc143c">2</p><p style="font-size:28px;font-weight:700;color:#f4f6fa">Datę i miejsce urodzenia</p></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#0a1630;border:1px solid #1b3366;border-radius:20px;padding:32px"><p style="font-size:48px;font-weight:800;color:#dc143c">3</p><p style="font-size:28px;font-weight:700;color:#f4f6fa">Miejsce zamieszkania</p></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px;background:#f4f6fa;border-radius:20px;padding:32px"><p style="font-size:48px;font-weight:800;color:#dc143c">4</p><p style="font-size:28px;font-weight:700;color:#050b1a">Własnoręczny podpis</p></div>
+</div>
+</div>
+<ul style="font-size:26px;line-height:1.5;color:#dfe5ef"><li>Lista założycieli jest jednocześnie listą obecności</li><li>Podpisem oświadczamy, że spełniamy warunki z art. 3 ust. 1 Prawa o stowarzyszeniach</li><li>Stowarzyszenie zwykłe zakładają co najmniej 3 osoby</li></ul>
+<div style="position:absolute;left:128px;bottom:52px;width:1664px;display:flex;flex-direction:row;align-items:center;gap:20px"><img src="assets/emblemat.png" alt="Emblemat PSU" style="width:56px;height:55px;object-fit:contain;border-radius:50%"><p style="font-size:24px;color:#9fb0cc">Załącznik nr 2 do protokołu z Zebrania Założycielskiego</p></div>
+<aside>Prośba do wszystkich obecnych o czytelne wypełnienie i podpisanie listy założycieli. Art. 3 ust. 1 oznacza: pełnoletność, pełna zdolność do czynności prawnych i brak pozbawienia praw publicznych. Po podpisaniu listy przewodniczący zamyka obrady zebrania założycielskiego.</aside>
+</section>
+<section data-index="15" id="dalej" data-transition="fade" style="background:radial-gradient(ellipse at 50% 0%, #1b3366 0%, #0a1630 40%, #050b1a 80%);color:#f4f6fa;font-family:'Montserrat', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:56px">
+<svg aria-label="" width="1920" height="1080" viewBox="0 0 1920 1080" style="position:absolute;left:0;top:0;width:1920px;height:1080px"><g fill="#ffffff"><circle cx="230" cy="194" r="1.5" opacity="0.6"/><circle cx="1382" cy="130" r="1.5" opacity="0.55"/><circle cx="730" cy="691" r="2.2" opacity="0.65"/><circle cx="1651" cy="583" r="1.5" opacity="0.45"/><circle cx="422" cy="929" r="1.5" opacity="0.4"/><circle cx="1114" cy="346" r="2.2" opacity="0.55"/><circle cx="1766" cy="950" r="1.5" opacity="0.45"/><circle cx="77" cy="518" r="1.5" opacity="0.4"/><circle cx="960" cy="60" r="1.2" opacity="0.5"/><circle cx="1530" cy="300" r="1.2" opacity="0.4"/><circle cx="560" cy="420" r="1.2" opacity="0.35"/><circle cx="1240" cy="820" r="1.8" opacity="0.5"/><circle cx="320" cy="640" r="1.2" opacity="0.35"/><circle cx="1860" cy="200" r="1.8" opacity="0.5"/><circle cx="880" cy="1000" r="1.2" opacity="0.4"/><circle cx="140" cy="60" r="1.2" opacity="0.45"/><circle cx="1450" cy="1030" r="1.2" opacity="0.4"/><circle cx="660" cy="150" r="1.8" opacity="0.5"/></g></svg>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:600;letter-spacing:8px;text-transform:uppercase;color:#dfe5ef">Po zebraniu</p>
+<h2 style="font-family:'Montserrat', Arial, sans-serif;font-size:64px;font-weight:800;line-height:1.1;text-transform:uppercase;color:#f4f6fa">Co dalej</h2>
+<div style="width:120px;height:6px;background:linear-gradient(to bottom, #f4f6fa 0% 50%, #dc143c 50% 100%)"></div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:24px">
+<div style="display:flex;flex-direction:column;gap:16px;border-top:6px solid #dc143c;background:#0a1630;border-radius:0 0 20px 20px;padding:36px"><p style="font-size:24px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#8ec5ff">Krok 1</p><h3 style="font-size:30px;font-weight:700;color:#f4f6fa">Wniosek do urzędu</h3><p style="font-size:24px;line-height:1.45;color:#9fb0cc">Regulamin (2 egz.), lista założycieli, protokół z uchwałami, oświadczenie o lokalu</p></div>
+<div style="display:flex;flex-direction:column;gap:16px;border-top:6px solid #dfe5ef;background:#0a1630;border-radius:0 0 20px 20px;padding:36px"><p style="font-size:24px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#8ec5ff">Krok 2</p><h3 style="font-size:30px;font-weight:700;color:#f4f6fa">Wpis do ewidencji</h3><p style="font-size:24px;line-height:1.45;color:#9fb0cc">Z chwilą wpisu założyciele stają się członkami PSU</p></div>
+<div style="display:flex;flex-direction:column;gap:16px;border-top:6px solid #dfe5ef;background:#0a1630;border-radius:0 0 20px 20px;padding:36px"><p style="font-size:24px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#8ec5ff">Krok 3</p><h3 style="font-size:30px;font-weight:700;color:#f4f6fa">Pierwsze uchwały Zarządu</h3><p style="font-size:24px;line-height:1.45;color:#9fb0cc">Składki, wzór logo i pieczęci, standardy weryfikacji, przyjęcie nowych członków</p></div>
+<div style="display:flex;flex-direction:column;gap:16px;border-top:6px solid #dfe5ef;background:#0a1630;border-radius:0 0 20px 20px;padding:36px"><p style="font-size:24px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#8ec5ff">Krok 4</p><h3 style="font-size:30px;font-weight:700;color:#f4f6fa">Zebranie Członków</h3><p style="font-size:24px;line-height:1.45;color:#9fb0cc">Zwyczajne, w ciągu 12 miesięcy – sprawozdanie Zarządu</p></div>
+</div>
+<div style="position:absolute;left:128px;bottom:52px;width:1664px;display:flex;flex-direction:row;align-items:center;gap:20px"><img src="assets/emblemat.png" alt="Emblemat PSU" style="width:56px;height:55px;object-fit:contain;border-radius:50%"><p style="font-size:24px;color:#9fb0cc">PSU · Zebranie Założycielskie · Szczyrk, 30.10.2026</p></div>
+<aside>Co dzieje się po dzisiejszym zebraniu. Zarząd składa wniosek z czterema załącznikami do Prezydenta Wrocławia. Po wpisie do ewidencji wszyscy założyciele automatycznie stają się członkami. Deklaracje nowych osób złożone przed wpisem Zarząd rozpatrzy zaraz po nim. Pierwsze zwyczajne Zebranie Członków – najpóźniej w ciągu 12 miesięcy.</aside>
+</section>
+<section data-index="16" id="koniec" data-transition="fade" style="background:radial-gradient(ellipse at 50% 40%, #1b3366 0%, #0a1630 45%, #050b1a 85%);color:#f4f6fa;font-family:'Montserrat', Arial, sans-serif;padding:96px 128px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:36px">
+<svg aria-label="" width="1920" height="1080" viewBox="0 0 1920 1080" style="position:absolute;left:0;top:0;width:1920px;height:1080px"><g fill="#ffffff"><circle cx="230" cy="194" r="1.5" opacity="0.6"/><circle cx="1382" cy="130" r="1.5" opacity="0.55"/><circle cx="730" cy="691" r="2.2" opacity="0.65"/><circle cx="1651" cy="583" r="1.5" opacity="0.45"/><circle cx="422" cy="929" r="1.5" opacity="0.4"/><circle cx="1114" cy="346" r="2.2" opacity="0.55"/><circle cx="1766" cy="950" r="1.5" opacity="0.45"/><circle cx="77" cy="518" r="1.5" opacity="0.4"/><circle cx="960" cy="60" r="1.2" opacity="0.5"/><circle cx="1530" cy="300" r="1.2" opacity="0.4"/><circle cx="560" cy="420" r="1.2" opacity="0.35"/><circle cx="1240" cy="820" r="1.8" opacity="0.5"/><circle cx="320" cy="640" r="1.2" opacity="0.35"/><circle cx="1860" cy="200" r="1.8" opacity="0.5"/><circle cx="880" cy="1000" r="1.2" opacity="0.4"/><circle cx="140" cy="60" r="1.2" opacity="0.45"/><circle cx="1450" cy="1030" r="1.2" opacity="0.4"/><circle cx="660" cy="150" r="1.8" opacity="0.5"/></g></svg>
+<img src="assets/emblemat.png" alt="Emblemat PSU" style="width:460px;height:450px;object-fit:contain;border-radius:50%;box-shadow:0 0 0 1px rgba(223,229,239,0.2), 0 0 60px 10px rgba(142,197,255,0.13), 0 0 140px 40px rgba(27,51,102,0.4)">
+<h2 style="font-family:'Montserrat', Arial, sans-serif;font-size:88px;font-weight:800;line-height:1.05;text-transform:uppercase;text-align:center;color:#f4f6fa">Dziękujemy</h2>
+<div style="width:160px;height:6px;background:linear-gradient(to bottom, #f4f6fa 0% 50%, #dc143c 50% 100%)"></div>
+<p style="font-size:28px;font-weight:600;letter-spacing:10px;text-transform:uppercase;text-align:center;color:#dfe5ef">Badania · Analiza · Edukacja   ·   psu.org.pl</p>
+<aside>Zamknięcie zebrania założycielskiego. Dziękuję wszystkim za udział. Przypominam o podpisaniu listy założycieli, jeśli ktoś jeszcze tego nie zrobił.</aside>
+</section>
+</main>
+<div id="progress"></div>
+<div id="notes" aria-live="polite"></div>
+<nav id="hud" aria-label="Sterowanie prezentacją">
+  <button id="prev" aria-label="Poprzedni slajd">←</button>
+  <span id="count"></span>
+  <button id="next" aria-label="Następny slajd">→</button>
+  <button id="notesBtn" title="Notatki (N)">Notatki</button>
+  <button id="fsBtn" title="Pełny ekran (F)">Pełny ekran</button>
+  <button id="resetBtn" title="Wyczyść wpisane wyniki głosowań">Wyczyść wyniki</button>
+</nav>
+<script>
+(() => {
+  const stage = document.getElementById('stage');
+  const slides = [...stage.children];
+  const notes = document.getElementById('notes');
+  const count = document.getElementById('count');
+  const progress = document.getElementById('progress');
+  let cur = 0;
+
+  const fit = () => {
+    const s = Math.min(innerWidth / 1920, innerHeight / 1080);
+    stage.style.transform = `scale(${s}) translate(-50%, -50%)`;
+  };
+  addEventListener('resize', fit); fit();
+
+  const show = (i, push = true) => {
+    cur = Math.max(0, Math.min(slides.length - 1, i));
+    slides.forEach((el, k) => el.classList.toggle('active', k === cur));
+    const a = slides[cur].querySelector('aside');
+    notes.textContent = a ? a.textContent : '';
+    count.textContent = `${cur + 1} / ${slides.length}`;
+    progress.style.width = `${(cur + 1) / slides.length * 100}%`;
+    if (push) history.replaceState(null, '', '#' + (cur + 1));
+    if (document.activeElement && document.activeElement.classList.contains('tally')) document.activeElement.blur();
+  };
+  const go = d => show(cur + d);
+
+  addEventListener('keydown', e => {
+    if (e.target.classList && e.target.classList.contains('tally')) {
+      if (e.key === 'Escape' || e.key === 'Enter') e.target.blur();
+      return;
+    }
+    if (['ArrowRight', 'PageDown', ' ', 'ArrowDown'].includes(e.key)) { e.preventDefault(); go(1); }
+    else if (['ArrowLeft', 'PageUp', 'ArrowUp'].includes(e.key)) { e.preventDefault(); go(-1); }
+    else if (e.key === 'Home') show(0);
+    else if (e.key === 'End') show(slides.length - 1);
+    else if (e.key === 'f' || e.key === 'F') toggleFs();
+    else if (e.key === 'n' || e.key === 'N') document.body.classList.toggle('show-notes');
+  });
+
+  stage.addEventListener('click', e => {
+    if (e.target.closest('input, button, a')) return;
+    go(e.clientX > innerWidth / 3 ? 1 : -1);
+  });
+  let tx = null;
+  addEventListener('touchstart', e => { tx = e.touches[0].clientX; }, { passive: true });
+  addEventListener('touchend', e => {
+    if (tx === null) return;
+    const dx = e.changedTouches[0].clientX - tx; tx = null;
+    if (Math.abs(dx) > 50) go(dx < 0 ? 1 : -1);
+  });
+
+  const toggleFs = () => document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen();
+  document.getElementById('prev').onclick = () => go(-1);
+  document.getElementById('next').onclick = () => go(1);
+  document.getElementById('fsBtn').onclick = toggleFs;
+  document.getElementById('notesBtn').onclick = () => document.body.classList.toggle('show-notes');
+
+  // Wyniki głosowań: zapisywane w tej przeglądarce
+  const store = {
+    get(k) { try { return localStorage.getItem('psu-vote-' + k) || ''; } catch { return ''; } },
+    set(k, v) { try { v ? localStorage.setItem('psu-vote-' + k, v) : localStorage.removeItem('psu-vote-' + k); } catch {} },
+  };
+  const tallies = [...document.querySelectorAll('.tally')];
+  const check = slide => {
+    const t = [...slide.querySelectorAll('.tally')];
+    const [all, ...parts] = t.map(x => x.value === '' ? null : +x.value);
+    const ok = all === null || parts.some(p => p === null) || parts.reduce((a, b) => a + b, 0) === all;
+    t.forEach(x => { x.classList.toggle('bad', !ok); x.title = ok ? '' : 'Suma za + przeciw + wstrzymało się ≠ głosowało'; });
+  };
+  tallies.forEach(inp => {
+    inp.value = store.get(inp.dataset.key);
+    inp.addEventListener('input', () => {
+      inp.value = inp.value.replace(/\D/g, '');
+      store.set(inp.dataset.key, inp.value);
+      check(inp.closest('section'));
+    });
+  });
+  slides.forEach(check);
+  document.getElementById('resetBtn').onclick = () => {
+    if (!confirm('Wyczyścić wszystkie wpisane wyniki głosowań?')) return;
+    tallies.forEach(inp => { inp.value = ''; store.set(inp.dataset.key, ''); });
+    slides.forEach(check);
+  };
+
+  const fromHash = () => { const n = parseInt(location.hash.slice(1), 10); return isNaN(n) ? 0 : n - 1; };
+  addEventListener('hashchange', () => show(fromHash(), false));
+  show(fromHash(), false);
+})();
+</script>
+</body>
+</html>
